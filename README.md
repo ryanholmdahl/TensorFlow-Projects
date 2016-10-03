@@ -9,4 +9,4 @@ This repository contains several TensorFlow projects, each of which implement cu
   In this project, I created many linear classifiers on portions of the MAGIC dataset, then trained a deep ensemble learner on their outputs.
   3. [Neural Document Modeling.](https://arxiv.org/pdf/1511.06038v4.pdf) The paper describes a Neural Varitaional Document Model, which maps a continuous bag-of-words (CBOW) representation of a document to a continuous style vector. I took a somewhat different approach from the linked paper, opting to not include the variational framework and instead adding regularization to the style representation to prevent value explosion. Regardless, the styles can still be used to analyze document similarity and compress information to a much lower dimension than the full vocabulary.
   
-  In this project, I created a neural document model to find an effective reduction of the 20News dataset.
+  In this project, I created a neural document model to find an effective reduction of the 20News dataset. I used [this work](https://github.com/carpedm20/variational-text-tensorflow) for a few implementation pointers, especially with building the loss function.
